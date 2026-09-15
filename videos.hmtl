@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML-5 Video Example</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="video.js" defer></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <video 
+            id="video"
+            controls 
+            width="320" height="240" 
+            loop
+            autoplay muted
+            poster="on_record.png"
+            preload="auto"
+            >
+                <source src="on_record.mp4" type="video/mp4">
+                <source src="on_record.ogv" type="video/ogg">
+            </video>
+            <br>
+            <button onclick="playpause()">Play or Pause the video</button>
+        </div>
+    </body>
+</html>
